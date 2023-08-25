@@ -15,20 +15,26 @@ public class IMC{
         
         imc = peso/(altura*altura);
         
+        
         if (imc < 18.5){
-            System.out.println("IMC: "+imc+ " Abaixo do peso");
+            var message = String.format("IMC: %.2f - Abaixo do peso", imc);
+            System.out.println(message);
         
         }else if (imc >=18.5 && imc <25){
-            System.out.println("IMC: "+imc+ " Peso normal");
+            var message = String.format("IMC: %.2f - Peso Normal", imc);
+            System.out.println(message);
             
         }else if (imc >= 25 && imc <30){
-            System.out.println("IMC: "+imc+" Sobrepeso");
+            var message = String.format("IMC: %.2f - Sobrepeso", imc);
+            System.out.println(message);
             
         }else if (imc >= 30 && imc <40){
-            System.out.println("IMC: "+imc+" Obesidade");
+            var message = String.format("IMC: %.2f - Obesidade", imc);
+            System.out.println(message);
             
         }else{
-            System.out.println("IMC: "+imc+" Obesidade Grave");
+            var message = String.format("IMC: %.2f - Obesidade Grave", imc);
+            System.out.println(message);
         }   
 
     }
