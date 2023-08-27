@@ -4,13 +4,12 @@ import java.util.Scanner;
 public class fatorial {
 
     public static void main(String args[]) {
-        int v1, v2, fatrec=0,s;
+        int v1, v2=1, fatrec=0, s;
         
         Scanner input = new Scanner(System.in);
         System.out.print("Digite o valor: ");
         v1 = input.nextInt();
         s= v1;
-        v2 = 1;
 
         if (v1 == 0 || v1 == 1){
             fatrec = 1;
