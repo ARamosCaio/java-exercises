@@ -4,18 +4,25 @@ import java.util.Scanner;
 public class fatorial {
 
     public static void main(String args[]) {
-        int valor, fat, fatrec;
+        int v1, v2, fatrec=0,s;
         
         Scanner input = new Scanner(System.in);
         System.out.print("Digite o valor: ");
-        valor = input.nextInt();
-        
-        while (valor>1){
-            fat = valor*(valor-1);
-            valor--;
-            System.out.println("valor: " + valor);
-            System.out.println("fatorial: "+ fat);
-            
+        v1 = input.nextInt();
+        s= v1;
+        v2 = 1;
+
+        if (v1 == 0 || v1 == 1){
+            fatrec = 1;
+            System.out.println(String.format("Fatorial de %s: %s", v1, fatrec));
+
+        }else{
+            while (v1>1){
+                fatrec = v1*v2;
+                v2 = fatrec;
+                v1--;            
         }
+            System.out.println(String.format("Fatorial de %s: %s", s, fatrec));
+        }    
     }
 }
