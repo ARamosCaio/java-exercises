@@ -1,0 +1,21 @@
+package com.mycompany.java.exercises;
+import java.util.Scanner;
+
+public class fatorial {
+
+    public static void main(String args[]) {
+        int valor, fat, fatrec;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o valor: ");
+        valor = input.nextInt();
+        
+        while (valor>1){
+            fat = valor*(valor-1);
+            valor--;
+            System.out.println("valor: " + valor);
+            System.out.println("fatorial: "+ fat);
+            
+        }
+    }
+}
