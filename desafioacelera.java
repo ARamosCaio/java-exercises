@@ -13,6 +13,6 @@ public class CincoPatinhos {
             p = p-1;
         }
         System.out.println("Dois patinhos foram passear, Além das montanhas Para brincar, A mamãe gritou: Quá, quá, quá, quá, Mas só um patinho voltou de lá");
-        System.out.println("Um patinho foi passear, além das montanhas para brincar, a mamãe gritou: quá quá quá quá, mas nenhum patinho voltou de lá");
+        System.out.println("Um patinho foi passear, além das montanhas para brincar, a mamãe gritou: Quá, quá, quá, quá, Mas nenhum patinho voltou de lá");
     }
 }
